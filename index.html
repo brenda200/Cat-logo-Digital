@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vou Pedir - Catálogo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Seu <span>mimo</span></div>
+        <div class="header-icons">
+            <div class="cart-icon" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-title">
+            <h1>Novidades dia das mães</h1>
+            <p>Feliz dia das mães</p>
+        </section>
+
+        <div class="products-grid" id="products-grid">
+            <!-- Produtos serão inseridos via JS -->
+        </div>
+    </main>
+
+    <!-- Carrinho Lateral -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Seu Carrinho</h2>
+            <span class="close-cart" onclick="toggleCart()">&times;</span>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Itens do carrinho -->
+        </div>
+        <div class="cart-footer">
+            <div class="total">Total: <span id="cart-total">R$ 0,00</span></div>
+            <button class="checkout-btn" onclick="sendWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Finalizar no WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
