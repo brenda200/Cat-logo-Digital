@@ -122,7 +122,7 @@ function sendWhatsApp() {
     message += `\n*Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
     
     const encodedMessage = encodeURIComponent(message);
-    const phone = "5511999999999"; // Substituir pelo número real
+    const phone = "5591981265890"; // Substituir pelo número real
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
 }
 
